@@ -1,0 +1,25 @@
+/* Work */
+
+.work-item {
+    flex-basis: calc((100% - 60px) / 3);
+    position: relative;
+  }
+  
+  .work-item__name {
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: var(--overlay-color);
+  
+    color: var(--color-white);
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  
+    position: absolute;
+    bottom: 0;
+  }
+  

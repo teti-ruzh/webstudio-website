@@ -1,0 +1,36 @@
+/* Portfolio buttons*/
+
+.buttons-list {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+    // gap: 8px;
+    margin-bottom: 25px;
+
+ @media screen and (min-width: 768px) {
+  // display: flex;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+}
+
+
+.buttons-list_item {  
+  
+  @media screen and (max-width: 767px) {
+    // display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
+ 
+}   

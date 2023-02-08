@@ -1,0 +1,31 @@
+/* Email input (subscribe) */
+
+.email-input {
+    width: 450px;
+    padding: 15px 16px;
+    background-color: var(--dark-bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-size: 16px;
+    color: var(--color-white);
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.25;
+      }
+
+@media screen and (max-width: 479px) {
+    width: 100%;
+}
+
+@media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+    width: 358px;
+}
+  }
+  
+  

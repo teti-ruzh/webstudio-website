@@ -1,0 +1,125 @@
+
+body {
+    color: var(--secondary-text-color);
+    background-color: var(--color-white);
+    font-family: var(--main-font-style), sans-serif;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    &.modal-open{
+      overflow: hidden;
+    }
+  }
+
+
+  .section {
+    padding: 60px 0;
+    // margin-right: auto;
+    // margin-left: auto;
+
+    @media screen and (min-width: 1200px) {
+      padding: 94px 0;
+    }
+  }
+  
+  .section--compressed {
+    padding: 0 0 94px;
+
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+  }
+  
+  .section--grey {
+    background-color: var(--secondary-bg-color);
+  }
+  
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
+    
+  }
+
+  
+  %list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  %link {
+    text-decoration: none;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+  .title {
+    margin-top: 0;
+    margin-bottom: 50px;
+  
+    color: var(--primary-text-color);
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+    line-height: 1.67;
+    }
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+  
+  /* Main page Flexboxes */
+  .features,
+  .work,
+  .team {
+    @extend %list;
+
+
+@media screen and (min-width: 768px){
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1200px) {
+flex-wrap: nowrap;
+}
+
+  }

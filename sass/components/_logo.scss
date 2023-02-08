@@ -1,0 +1,30 @@
+/* Logo */
+
+.logo {
+  @extend %link;
+    display: inline-block;
+    color: var(--accent-color);
+    font-family: var(--logo-font-style), sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+    line-height: 1.2;
+    }
+  }
+  
+  .logo__accent {
+    color: var(--color-black);
+  }
+  
+  .logo__accent--inverse {
+    color: var(--color-white);
+  }
+  
+  .footer__logo {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  

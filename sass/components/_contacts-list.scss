@@ -1,0 +1,38 @@
+/* Contacts list */
+
+.contacts-list {
+  @extend %list;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 231px;
+    align-items: center;
+
+
+   @media screen and (min-width: 1200px) {
+    gap: 9px;
+    align-items: start;
+   }
+  }
+  
+  .contacts-list__item {
+    @extend %link;
+    color: var(--footer-contacts-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+  
+    transition: color 250ms var(--timing-function);
+
+    &--inverse {
+        color: var(--color-white);
+      }
+      
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
+      }
+  }
+  
+ 
+
